@@ -1,0 +1,184 @@
+span{
+    font-family: "黑体";
+    font-size:20px;
+    color:#ffffff;
+}
+.home{
+    width:1000px;
+    height:28px;
+    background-color: #ff0600;
+    float:left;
+
+
+}
+.homeText{
+    width:200px;
+    height:22px;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    float:left;
+   margin: 2px 0 2px 0;
+
+}
+#imgGlass{
+    float:right;
+
+}
+
+.span{
+    width:100px;
+    height;20px;
+    float:left;
+}
+#box{
+    box-sizing: border-box;
+}
+.pageLeft{
+    width: 200px;
+    height: 280px;
+    float:left;
+    margin: 20px auto;
+
+
+}
+.web{
+    width:1000px;
+}
+.pageMid{
+    width:550px;
+    height:300px;
+    float:left;
+    margin:10px  auto;
+}
+.game{
+    width:150px;
+    border:10px solid #ff2f00;
+    border-top: none;
+    border-right: none;
+}
+.game span{
+    color:black;
+}
+.pageRight{
+    width:222px;
+    height:300px;
+    margin:20px 0 0 10px;
+    float:right;
+}
+.talk span{
+    color:black;
+}
+.talk{
+    width:220px;
+    border:10px solid #ff2f00;
+    border-top: none;
+    border-right: none;
+
+
+
+}
+.radio1{
+    width: 1000px;
+    height: 70px;
+    float:left;
+}
+.gp{
+    width:1000px;
+    height:110px;
+    float:left;
+}
+.gp1{
+    width:1000px;
+    height:110px;
+    float:left;
+}
+.gp2{
+    width:1000px;
+    height:110px;
+    float:left;
+}
+.gameText{
+    width:1000px;
+    height:50px;
+    float:left;
+}
+.gameText1{
+    width:1000px;
+    height:50px;
+    float:left;
+}
+.gameText2{
+    width:1000px;
+    height:50px;
+    float:left;
+}
+.pageButton{
+    width:1000px;
+    height:80px;
+    float:left;
+    margin: 10px 50px 20px 180px;
+}
+.about{
+    width:1000px;
+    height:400px;
+    float:left;
+    margin: 20px auto;
+    background-color: #000000;
+}
+
+
+.link{
+    width: 300px;
+    float:left;
+    margin:30px 0 0 20px;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.zhuce{
+    width: 300px;
+    float:left;
+    margin: 40px auto;
+    color: white;
+
+}
+.login{
+    width: 300px;
+    float:left;
+    margin: 40px auto;
+    color: white;
+}
+.zhuce input{
+    height: 25px;
+    background-color: orange;
+}
+.login input{
+    height: 25px;
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
