@@ -429,6 +429,7 @@ hr{
     height: auto;
     background-color: #e1e2e3;
     margin-top: 100px;
+    position: relative;
 }
 .footer .link-container{
     width: 1600px;
@@ -505,6 +506,14 @@ hr{
     float: left;
     margin-top: 20px;
     margin-right: 10px;
+}
+.bannerIcon-container{
+    width: 60px;
+    height: 180px;
+    background-image: url(images/banner-icons.png);
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
 }
 
 
