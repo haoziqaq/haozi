@@ -1,0 +1,240 @@
+@font-face {
+    font-family: glyphicons;
+    src:url(../fonts/glyphicons-halflings-regular.ttf);
+}
+
+.moblie-container{
+    display: none;
+}
+
+
+.desktop-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    margin: 0 auto ;
+    display: block;
+}
+.desktop-container .desktopName{
+    width: 100vw;
+    height: 6vh;
+    position: absolute;
+    color: #d6d6d6;
+    font-size: 2vw;
+    font-style: italic;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: 1.5vh;
+    bottom: 0;
+}
+.desktopName span{
+    font-family: 微软雅黑;
+    color: #333333;
+    font-weight: bolder;
+}
+.desktop-container .function-container{
+    width:52vw;
+    height: 59vh;
+    background-color: rgba(0,0,0,0.77);
+    position: absolute;
+    display: flex;
+    bottom: 7vh;
+}
+.function span{
+    color: white;
+    font-weight: bolder;
+    font-family: 微软雅黑;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+}
+.function-container .function{
+    width:  50vw;
+    height: 58vh;
+    margin: 1vw auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.function .studentDaily{
+    width: 12vw;
+    height: 13vh;
+    background-color: #B61705;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.studentDaily:before{
+    content: "\e008";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .classExpression{
+    width: 12vw;
+    height: 13vh;
+    background-color: #0086A8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.classExpression:before{
+    content: "\e013";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .studentGroup{
+    width: 12vw;
+    height: 13vh;
+    background-color: #6B00BB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.studentGroup:before{
+    content: "\e111";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .homework{
+    width: 12vw;
+    height: 13vh;
+    background-color: #BB006B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.homework:before{
+    content: "\e171";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .cardList{
+    width: 12vw;
+    height: 13vh;
+    background-color: #A66800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.cardList:before{
+    content: "\e105";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .sourceCode{
+    width: 12vw;
+    height: 13vh;
+    background-color: #779902;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.sourceCode:before{
+    content: "\e118";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .classAdmin{
+    width: 12vw;
+    height: 13vh;
+    background-color: #0113BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.classAdmin:before{
+    content: "\e103";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .teacherRed{
+    width: 12vw;
+    height: 13vh;
+    background-color: #009747;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.teacherRed:before{
+    content: "\e115";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .apply{
+    width: 12vw;
+    height: 13vh;
+    background-color: #417A62;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.apply:before{
+    content: "\e121";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .moveApp{
+    width: 12vw;
+    height: 13vh;
+    background-color: #E800BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.moveApp:before{
+    content: "\e145";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .webInfom{
+    width: 12vw;
+    height: 13vh;
+    background-color: #01BA95;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.webInfom:before{
+    content: "\e123";
+    color:white;
+    font-size: 1.5vw;
+}
+.function .setup{
+    width: 12vw;
+    height: 13vh;
+    background-color: #1B5AC5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.setup:before{
+    content: "\e019";
+    color:white;
+    font-size: 1.5vw;
+}
+
+

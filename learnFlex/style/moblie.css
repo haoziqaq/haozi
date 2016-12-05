@@ -1,0 +1,183 @@
+@font-face {
+    font-family: glyphicons;
+    src:url(../fonts/glyphicons-halflings-regular.ttf);
+}
+.desktop-container {
+    display:none;
+}
+.moblie-container{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    width: 100vw;
+    height: 4vh;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header img{
+    width: 23vw;
+    height: 3.5vh;
+}
+.header span{
+    width: 8vw;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    margin-left: 0.5vw;
+    color: white;
+    margin-right: 1.5vw;
+    font-family: 微软雅黑;
+}
+.banner-container{
+    width: 100vw;
+    height: 26.5vh;
+    background: url("../image/mobile-image.png") no-repeat;
+    background-size: 100vw 26vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner-container .search-container{
+    width: 70vw;
+    height: 3vh;
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid black;
+    border-radius:10px;
+    position: absolute;
+    top:1vh;
+    display: flex;
+}
+.search-container img{
+    width: 3vw;
+    height: 2vh;
+    margin-top: 0.5vh;
+    margin-left: 2vw;
+}
+.search-container input[type=text]{
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0);
+}
+.point-container{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
+}
+.point-container .point{
+    width:1.2vw;
+    height: 0.9vh;
+    background-color: white;
+    border-radius: 50%;
+    margin-left:0.8vw;
+
+}
+.moblieFunction-container{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.moblieFunction-container span{
+    color: white;
+    font-weight: bolder;
+    font-family: 微软雅黑;
+    font-size:2.5vw;
+    margin-top: 0.5vw;
+}
+/*.function span{*/
+    /*color: white;*/
+    /*font-weight: bolder;*/
+    /*font-family: 微软雅黑;*/
+    /*font-size: 1vw;*/
+    /*margin-top: 0.5vw;*/
+/*}*/
+/*.mobliefunction-container .function{*/
+    /*width:  50vw;*/
+    /*height: 58vh;*/
+    /*margin: 1vw auto 0 auto;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-flow: row wrap;*/
+/*}*/
+.studentDaily{
+    width: 32.8vw;
+    height: 10.5vh;
+    background-color: #B61705;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.studentDaily:before{
+    content: "\e008";
+    color:white;
+    font-size: 4.5vw;
+}
+.classExpression{
+    width: 32.8vw;
+    height: 10.5vh;
+    background-color: #0086A8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.classExpression:before{
+    content: "\e013";
+    color:white;
+    font-size: 4.5vw;
+}
+.studentGroup{
+    width: 32.8vw;
+    height: 10.5vh;
+    background-color: #6B00BB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.studentGroup:before{
+    content: "\e111";
+    color:white;
+    font-size: 4.5vw;
+}
+.homework{
+    width: 32.8vw;
+    height: 10.5vh;
+    background-color: #BB006B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: glyphicons;
+}
+.homework:before{
+    content: "\e171";
+    color:white;
+    font-size: 4.5vw;
+}
+.footer{
+    width: 100vw;
+    height: 4vh;
+    background-color: #000;
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding-top: 1vh;
+    padding-left: 0.8vw;
+    font-family: 微软雅黑;
+    font-size:2.5vw;
+}
