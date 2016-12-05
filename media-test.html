@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            width:100vw;
+            height: 60vh;
+            background-color:#000;
+            padding:1px;
+            font-family: glyphicons;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            color:#FFF;
+
+        }
+        @font-face {
+            font-family:glyphicons;
+            src:url(fonts/glyphicons-halflings-regular.ttf);
+        }
+        a{
+            color:#fff;
+        }
+        @media all and (min-width:1001px){
+            .container{
+                background-color: deepskyblue;
+            }
+        }
+        @media all and (min-width:800px) and (max-width: 1001px){
+            .container{
+                background-color: navy;
+            }
+            .container li a:after{
+                content: attr(data-code);
+            }
+        }
+        @media all and (min-width:400px) and (max-width: 800px){
+            .container{
+                background-color: darkcyan;
+            }
+            .container li:before{
+                content: "\2709";
+                color:blue;
+            }
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+
+</head>
+<body>
+        <div class="container"  >
+            <h1>改变浏览器窗口大小，查看效果！</h1>
+            <ul>
+                <li>
+                    <a href="mailto:johndoe@example.com" data-code="111">
+                        john doe
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:david@example.com" data-code="111">David</a>
+                </li>
+                <li>
+                    <a href="mailto:paubo@example.com" data-code="111">Paubo</a>
+                </li>
+            </ul>
+        </div>
+
+</body>
+</html>
