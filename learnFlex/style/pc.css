@@ -18,20 +18,21 @@
 }
 .desktop-container .desktopName{
     width: 100vw;
-    height: 6vh;
+    height: 5vh;
     position: absolute;
     color: #d6d6d6;
     font-size: 2vw;
     font-style: italic;
     font-family: Arial;
     font-weight: bold;
-    margin-left: 4vw;
+    left: 5vw;
     bottom: 0;
 }
 .desktopName span{
     font-family: 微软雅黑;
     color: #333333;
     font-weight: bolder;
+    line-height: 4vh;
 }
 .desktop-container .function-container{
     width:52vw;
@@ -41,6 +42,12 @@
     display: flex;
     bottom: 7vh;
     visibility: hidden;
+}
+.desktop-container input[type=button]:focus~ .function-container{
+    visibility: visible;
+}
+.function-container:focus{
+    visibility: visible;
 }
 .function span{
     color: white;
@@ -237,17 +244,42 @@
     color:white;
     font-size: 1.5vw;
 }
-.desktop-container input[type=checkbox],label{
+
+.desktop-container input[type=button]{
     position: absolute;
-    bottom: 1vh;
+    bottom: 0;
     left: 1vw;
+    margin-bottom: 0.5vh;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2.5vw;
+    font-family: Arial;
+    font-weight: bold;
+
 }
-.desktop-container input[type=checkbox]{
-    left:-2vw;
+.pcOnclick{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
 }
-:checked~ .function-container{
-    visibility: visible;
+.pcOnclick label{
+    color: white;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
 }
+.pcOnclick input[type=checkbox]{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: -3vh;
+}
+
+
+
 
 
 

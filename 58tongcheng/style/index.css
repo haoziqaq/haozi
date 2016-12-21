@@ -1,0 +1,936 @@
+@font-face {
+    font-family: glyphicons;
+    src:url(../font/glyphicons-halflings-regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    width:100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+.navigator{
+    width:1187px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.navigator span{
+    color: red;
+    margin-right: 7px;
+    float: left;
+}
+.navigator a{
+    text-decoration: none;
+    color:#000;
+    float: left;
+    margin-left: 5px;
+}
+.navigator a:hover{
+    color: red;
+}
+.navigator .weather-container{
+    width: 165px;
+    height: 100%;
+    float: left;
+    margin-left: 35px;
+    border: 1px solid #fff;
+}
+.navigator .weather-container:hover{
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    cursor: pointer;
+}
+.weather-container img{
+    margin-top: 7px;
+    float: left;
+    margin-left: 1px;
+}
+.navigator .login-container{
+    width: 60px;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 335px;
+    float: left;
+}
+.login-container a{
+    margin: 0;
+}
+.login-container span{
+    color: black;
+    margin: 0;
+}
+.navigator .selfCenter-container{
+    width: 90px;
+    height: 100%;
+    float: left;
+    font-family: glyphicons;
+    border: 1px solid #fff;
+
+}
+.navigator .selfCenter-container:after{
+    content: "\e114";
+    display: block;
+
+
+}
+.selfCenter-container span{
+    color: #000;
+    font-weight: normal;
+    line-height: 29px;
+    margin-left: 15px;
+}
+.selfCenter-container:hover{
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    cursor: pointer;
+}
+.selfCenter-container:hover span{
+    color: red;
+}
+.navigator .businessCenter-container{
+    width:55px;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+}
+.navigator .businessCenter-container a{
+    text-decoration: none;
+}
+.banner{
+    width: 1187px;
+    height: 50px;
+    margin: 0 auto;
+}
+.title{
+    width: 1187px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+}
+.title .logo-container{
+    width: 139px;
+    height: 50px;
+    margin-top: 15px;
+    float: left;
+}
+.title .searchAndInfom-container{
+    width: 520px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.title .searchAndInfom-container .search{
+    width:520px;
+    height:40px;
+    border:2px solid #FF552E;
+    float: left;
+
+}
+.title .searchAndInfom-container .search img{
+    float: left;
+
+}
+.title .searchAndInfom-container .search input[type=text]{
+    float: left;
+    width: 480px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+.title .searchAndInfom-container a{
+    text-decoration: none;
+    font-size: 12px;
+    color:#aaaaaa;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.title .searchAndInfom-container a:hover{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: #aaaaaa;
+}
+.title>input[value="搜 索"]{
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: #FF552E;
+    color: white;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.title>input[value="搜 索"]:hover{
+    background-color: rgba(255,85,46,0.85);
+}
+.title input[value="免费发布信息"]{
+    width:140px;
+    height: 40px;
+    float: left;
+    background-color: #FF552E;
+    color: white;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.title input[value="免费发布信息"]:hover{
+    background-color: rgba(255,85,46,0.85);
+}
+.title .pushInfom{
+    width: 140px;
+    height: 60px;
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+.title .pushInfom a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.title .pushInfom a:hover{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: #aaaaaa;
+}
+.mainLink-container{
+    width: 1187px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-bottom: 2px solid #FF552E;
+    position: relative;
+    overflow: hidden;
+}
+.mainLink-container .home-container{
+    width: 104px;
+    height: 34px;
+    background-color: #FF552E;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container a{
+    color: #FF552E;
+    text-decoration: none;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+.mainLink-container .webAPP-container{
+    width: 140px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:110px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+#mainLink-icons{
+    margin-bottom:3px;
+    margin-left: 5px;
+}
+.mainLink-container .storeAPP-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:240px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container .weixinNumber-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:360px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}.mainLink-container .weixinWeb-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:490px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container .finance-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:575px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.finance-container div:hover{
+
+    background-color:#FF552E;
+}
+.finance-container div{
+    width: 60px;
+    height: 34px;
+
+}
+
+.weixinWeb-container div:hover{
+
+    background-color:#FF552E;
+}
+.weixinWeb-container div{
+    width: 60px;
+    height: 34px;
+}
+.weixinWeb-container div:hover a{
+
+   color: white;
+}
+.finance-container div:hover a{
+    color: white;
+}
+.mainLink-container .anjuke-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:672px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container .yingcai-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:775px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container .car-container{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    bottom: 0;
+    left:920px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+
+}
+.mainLink-container .extension-container{
+    width: 100px;
+    height: 34px;
+    margin-top: 22px;
+    float: right;
+    margin-right:20px;
+
+}
+.mainLink-container .extension-container a{
+    font-size: 12px;
+    color: #888888;
+    font-weight: normal;
+    float: right;
+}
+.anjuke-container div:hover{
+
+    background-color:#FF552E;
+}
+.anjuke-container div{
+    width: 60px;
+    height: 34px;
+}
+.anjuke-container a{
+    color:#888888;
+}
+.anjuke-container div:hover a{
+    color: white;
+}
+.yingcai-container div:hover{
+
+    background-color:#FF552E;
+}
+.yingcai-container div{
+    width: 100px;
+    height: 34px;
+}
+.yingcai-container a{
+    color:#888888;
+}
+.yingcai-container div:hover a{
+    color: white;
+}
+.car-container div:hover{
+
+    background-color:#FF552E;
+}
+.car-container div{
+    width: 60px;
+    height: 34px;
+}
+.car-container a{
+    color:#888888;
+}
+.car-container div:hover a{
+    color: white;
+}
+.extension-container a:hover{
+    color: #FF552E;
+    text-decoration: underline;
+}
+
+.webGuideAndselfSale-container{
+    width: 1187px;
+    height: 125px;
+    margin:8px auto 0 ;
+    overflow: hidden;
+}
+
+.webGuideAndselfSale-container .webGuide{
+    width: 845px;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+.webGuideAndselfSale-container .webGuide div{
+    width: 118px;
+    height: 93px;
+    border-right: 1px solid #f8f8f8;
+    float: left;
+    margin-top: 15px;
+}
+.webGuideAndselfSale-container .webGuide div:last-child{
+    border-right: none;
+}
+.webGuideAndselfSale-container .webGuide div a{
+    display: block;
+    margin-left: 42px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+.webGuideAndselfSale-container .webGuide div a:hover{
+    color: #FF552E;
+}
+.webGuideAndselfSale-container .webGuide div  span a{
+    color: #0e8ed8;
+    font-size: 12px;
+    width: 24px;
+    margin: 0 ;
+    display: inline;
+}
+.selfSale{
+    width: 334px;
+    height: 100%;
+    margin-left: 8px;
+    background-color: white;
+    float: left;
+}
+.selfSale .text{
+    width: 300px;
+    height: 35px;
+    margin: 10px auto 0;
+    overflow: hidden;
+    border-bottom: 1px solid #f3f3f3;
+}
+.selfSale .text a{
+    color: #FF552E;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    float: left;
+}
+.selfSale .text a:hover{
+    text-decoration: underline;
+}
+.selfSale .selfSale-kindOf{
+    width: 300px;
+    height: auto;
+    margin: 10px auto 0;
+}
+.selfSale .selfSale-kindOf div{
+    width: 28px;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+
+}
+.selfSale .selfSale-kindOf div a{
+    font-size: 12px;
+    color: #0e8ed8;
+    text-decoration: none;
+}
+.selfSale .selfSale-kindOf div:first-child{
+    margin-left: 15px;
+}
+article{
+    width: 1187px;
+    height: auto;
+    margin: 8px auto 0;
+    overflow: hidden;
+}
+.houseProduct-container{
+
+    width: 225px;
+    height: auto;
+    background-color: white;
+    margin-top: 10px;
+    padding: 1px;
+    overflow: hidden;
+}
+.houseProduct-container .houseProduct-title{
+
+    width: 180px;
+    height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 10px auto 0;
+
+
+}
+.houseProduct-container .houseProduct-title a {
+    font-size: 12px;
+    color: #FF552E;
+    background-color: white;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+.houseProduct-container .houseProduct-title span a{
+    font-size:16px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #FF552E;
+    text-decoration: none;
+}
+.houseProduct-container .houseProduct-title a:hover{
+    text-decoration: underline;
+}
+.houseProduct-container .houseProduct-inner{
+    width: 225px;
+    height: auto;
+}
+.houseProduct-inner ul:nth-child(1){
+    width:80px;
+    height: auto;
+    font-size: 14px;
+    color: #0e8ed8;
+    margin-left: 20px;
+    margin-bottom: 0;
+    float: left;
+}
+.houseProduct-inner ul:nth-child(2){
+    width:80px;
+    height: auto;
+    font-size: 14px;
+    color: #0e8ed8;
+    margin-left: 20px;
+    margin-bottom: 0;
+    float: left;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-top: 10px;
+}
+.houseProduct-inner ul:nth-child(3){
+    width:150px;
+    height: auto;
+    font-size: 14px;
+    color: #0e8ed8;
+    margin-left: 20px;
+    float: left;
+    margin-top: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #0e8ed8;
+    font-size: 14px;
+}
+ul li a:hover{
+    color: #FF552E;
+    text-decoration: underline;
+}
+.column{
+    width: 225px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    background-color: white;
+}
+.carSale-container{
+
+    width: 225px;
+    height: auto;
+    background-color: white;
+    margin-top: 10px;
+    padding: 1px;
+    overflow: hidden;
+}
+.carSale-container .carSale-title{
+
+    width: 180px;
+    height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 10px 0 0 20px;
+    overflow: hidden;
+    float: left;
+
+
+}
+.carSale-container .carSale-title a{
+    font-size: 12px;
+    color: #FF552E;
+    background-color: white;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+.carSale-container .carSale-title span a{
+    font-size:16px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.carSale-container .carSale-title a:hover{
+    text-decoration: underline;
+}
+.carSale-container .carSale-inner{
+    width: 225px;
+    height: auto;
+    float: left;
+}
+.carSale-inner a{
+    color: #0e8ed8;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    margin-left: 17px;
+    margin-top: 10px;
+    font-family: 微软雅黑;
+}
+.carSale-inner a span{
+    color: #888888;
+    font-size: 12px;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: #FF552E;
+}
+.column1{
+    width: 235px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    background-color: white;
+}
+.column2{
+    width: 366px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    background-color: white;
+}
+.column2 .houseProduct-container{
+    width: 360px;
+
+}
+.column2 .houseProduct-title{
+    width: 360px;
+    margin-left: 20px;
+}
+.column2 .houseProduct-inner{
+    width: 360px;
+    float: left;
+}
+.column2 .houseProduct-inner ul{
+    margin: 0;
+    float: left;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.column2 .houseProduct-inner span{
+    font-size: 12px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.column2 .houseProduct-inner span a{
+    text-decoration: none;
+    color:#888888;
+}
+.column2 .houseProduct-inner span a:hover{
+     text-decoration: underline;
+    color: #FF552E;
+}
+.column2 .carSale-container{
+    width: 360px;
+
+}
+.column2 .carSale-title{
+    width: 360px;
+    margin-left: 20px;
+}
+.column2 .carSale-inner{
+    width: 300px;
+    float: left;
+}
+.column2 .carSale-inner a{
+    margin-left: 0;
+}
+.column2 .carSale-inner span{
+    float: left;
+    margin-top: 10px;
+}
+.column2 .houseProduct-inner{
+    width: 400px;
+}
+.column2 .houseProduct-container{
+    width: 400px;
+}
+
+.column3{
+    width: 333px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    background-color: white;
+    margin-left: 8px;
+}
+.column3 .houseProduct-container{
+    width: 300px;
+}
+.column3 .houseProduct-container .houseProduct-title{
+    width: 300px;
+    margin-left: 20px;
+}
+.column3 .carSale-container{
+    width: 300px;
+}
+.column3 .carSale-container .carSale-title{
+    width: 333px;
+    margin-left: 20px;
+}
+.rowFunction-container{
+    width: 1187px;
+    height: auto;
+    overflow: hidden;
+    margin: 8px auto 0;
+    background-color: #fff;
+}
+
+.rowFunction-container .function-title{
+    width: 1187px;
+    height: 50px;
+    border-bottom: 1px solid #f3f3f3;
+    float: left;
+    color: #FF552E;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    padding: 10px 0 0 18px;
+}
+.rowFunction-container .function-inner{
+    width: 236px;
+    height: 163px;
+    border-right: 1px solid #f3f3f3;
+    float: left;
+    margin-top: 20px;
+}
+.rowFunction-container .function-inner:last-child{
+    border: none;
+}
+.rowFunction-container .function-inner span{
+    font-size: 14px;
+    font-family: Arial;
+    margin-left: 20px;
+    width: 236px;
+    float: left;
+}
+.tool{
+    background-position: -24px -24px;
+}
+.icon{
+    width: 24px;
+    height:24px;
+    background: url(../images/ToolsIcon.png);
+    margin-left: 12px;
+    float: left;
+}
+.tool-container{
+    width: 48px;
+    height: 36px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+.rowFunction-container .function-inner .tool-container span{
+    font-size: 12px;
+    width:48px;
+    height: 12px;
+    float: left;
+    margin: 10px 0 0 0;
+    color:#aaaaaa;
+}
+.tool-container:hover{
+    background-color: #f8f8f8;
+}
+.rowFunction-container .function-inner .tool-container:hover span{
+    color:#FF552E;
+}
+.banner1{
+    width: 1187px;
+    height: 50px;
+    margin: 10px auto 0;
+}
+footer{
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    margin-top: 10px;
+}
+.footLink {
+    width: 1187px;
+    height: 240px;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footLink .footLogo-container{
+    width: 225px;
+    height: 225px;
+    float: left;
+    padding-top: 65px;
+    padding-left: 10px;
+}
+.footLink .linkList{
+    width: 180px;
+    height: 225px;
+    float: left;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+.linkList span{
+    font-weight: bold;
+}
+.linkList ul li a{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+.friendLink{
+    width: 1187px;
+    height: auto;
+    margin: 0 auto;
+    padding-top:20px;
+    padding-left: 10px;
+    overflow: hidden;
+
+}
+.friendLink span{
+    color: #aaaaaa;
+    float: left;
+    font-size: 12px;
+}
+.friendLink .link{
+    float: left;
+    width: 65px;
+    color: #aaaaaa;
+    border-right: 1px solid #e1e1e1;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.friendLink .link:last-child{
+    border: none;
+}
+.friendLink a{
+    float: left;
+}
+.friendLink a:hover .link{
+    color:#FF552E;
+}
+.copyInfom{
+    width: 1187px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top:20px;
+    padding-left: 10px;
+}
+.copyInfom span{
+    font-size: 12px;
+    color: #000;
+    float: left;
+}
+.copyInfom .copyLink {
+    float: left;
+    width: 90px;
+    height: 12px;
+    color: #000;
+    border-right: 1px solid #e1e1e1;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.copyInfom .copyLink:hover{
+    color: #FF552E;
+}
+.footImage{
+    width: 1187px;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.footImage img{
+    margin-left: 20px;
+}
+.footImage-container{
+    margin: 0 auto;
+
+    width: 880px;
+}
+
+
+
+
+

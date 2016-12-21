@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("for循环嵌套语法<br>");
+
+    for(var i=0;i<10;i++){
+        for(var j=0;j<10;j++){
+        document.write("&nbsp;*");
+        }
+        document.write("<br>")
+    }
+
+    document.write("for循环半金字塔<br>");
+    for( i=0;i<10;i++){
+        for( j=0;j<=i;j++){
+            document.write("&nbsp;*");
+        }
+        document.write("<br>")
+    }
+    document.write("for循环半金字塔<br>");
+    for( i=0;i<10;i++){
+        for( j=i;j<10;j++){
+            document.write("&nbsp;*");
+        }
+        document.write("<br>")
+    }
+    document.write("for循环全金字塔<br>");
+    for( i=0;i<8;i++){
+        for( j=i;j<7;j++){
+            document.write("&nbsp ");
+        }
+        for(var n=0;n<2*i+1;n++){
+            document.write("&nbsp*");
+        }
+        document.write("<br>")
+    }
+    document.write("for循环全金字塔<br>");
+    for( i=0;i<8;i++){
+        for( j=0;j<i;j++){
+            document.write("&nbsp ");
+        }
+        for( n=0;n<15-2*i;n++){
+            document.write("&nbsp*");
+        }
+        document.write("<br>")
+    }
+
+    var a=['7','5','4','3','2','6','1','0'];
+    var index;
+    for(i=0;i<8;i++){
+        for(j=i+1;j<8;j++){
+        if(a[i]>a[j]){
+            index=a[i];
+            a[i]=a[j];
+            a[j]=index;
+
+        }
+        }
+    }
+    document.write(a);
+
+    var varstr=new String("data");
+    console.log(varstr);
+    var flag= varstr instanceof String;
+    document.write(flag);
+
+    var pint=parseInt("213");
+    document.write("<br>");
+    document.write("parseInt(213)--->"+pint);
+    var a1=new Array();
+    a1.push("123");
+    a1.push(123);
+    a1.push(true);
+    a1.push(undefined);
+    a1.push(null);
+    a1.push({title:"IM a sb"});
+    for(i=0;i<a1.length;i++){
+        document.writeln(a1[i]);
+    }
+//    var i1=0;
+//    while(i1<a1.length){
+//        document.writeln(a1[i1]);
+//        i1++;
+//    }
+//
+//   var resultJoin= a1.join("$");
+//    document.write(resultJoin);
+//
+//
+//    var resultSplit=resultJoin.split("$");
+//    document.write(resultJoin);
+
+</script>
+</body>
+</html>

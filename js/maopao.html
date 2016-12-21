@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .base{
+            width:600px;
+            height: 600px;
+            background-color: #000;
+        }
+        .child{
+            width:400px;
+            height: 400px;
+            background-color:red;
+        }.grand-son{
+            width:200px;
+            height:200px;
+            background-color: white;
+                 }
+    </style>
+</head>
+<body>
+<div class="base">
+    <div class="child">
+        <div class="grand-son">
+
+        </div>
+    </div>
+</div>
+<script>
+var base = document.querySelector(".base");
+var child = document.querySelector(".child");
+var grandson = document.querySelector(".grand-son");
+    child.addEventListener("click",handle);
+    function handle(e) {
+        var target=e.target;
+        var current=e.currentTarget;
+       alert("target:"+target.getAttribute("class"));
+        alert("current:"+current.getAttribute("class"));
+    }
+    base.addEventListener("click",function (e) {
+        var baseEle = e.currentTarget;
+        var bClass = baseEle.getAttribute("class");
+        alert(bClass);
+        alert(e.target.getAttribute("class"));
+    });
+    grandson.addEventListener("click",function (e) {
+        e.stopPropagation();
+    })
+</script>
+</body>
+</html>

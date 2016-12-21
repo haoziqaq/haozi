@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+<body>
+
+ <!--<div id="container">-->
+     <!--<div id="child1">-->
+        <!--<div id="grandson"></div>-->
+     <!--</div>-->
+     <!--<div id="child2">-->
+
+     <!--</div>-->
+ <!--</div>-->
+
+ <script>
+     var eventHandle={
+         addEventListener:function(key,handle){
+             if(typeof eventHandle[key]=="undefined") {
+                 eventHandle[key] = [];
+             }
+                eventHandle[key].push(handle);
+         },
+
+
+         dispatcher:function (key) {
+             var l= eventHandle[key].length;
+             for(i=0;i<l;i++){
+                 eventHandle[key][i]();
+             }
+     },
+         default:"default"
+
+     };
+     eventHandle.title="im title";
+     eventHandle["zh-title"]="中文标题";
+
+    console.log(eventHandle["zh-title"]);
+
+
+
+
+
+
+     var waterBoilHandle=[];
+     function makeWater(){
+         for(var i=0;i<100;i++){
+             var temp=i+1;
+             if(temp==100){
+                 eventHandle.dispatcher("water-is-boil");
+
+                 }
+             }
+         }
+
+
+     eventHandle.addEventListener("water-is-boil",
+             function(){
+                 document.write("水开了");
+             });
+     makeWater();
+     document.write(eventHandle["water-is-boil"].length);
+
+
+
+
+
+
+
+
+
+//    var container =document.getElementById("container");
+//     container.style.width="500px";
+//     container.style.height="200px";
+//     container.style.backgroundColor="rgba(249,209,226,1)";
+//     var nodes=container.childNodes;
+//     var childElement=document.getElementById("child1");
+//     var pElement= childElement.parentNode;
+//     function showName(title,title1,title2) {
+//         var s= "大家好我叫";
+//         var s1= "，字"+title1;
+//         var s2=",号"+title2;
+//         console.log(s+title+s1+s2);
+//     }
+//     showName("思聪","111","222");
+//
+//     function loaded(parameter) {
+//         alert("你好啊");
+//         invokeHandle();
+//         parameter();
+//     }
+//     function invokeHandle() {
+//         console.log("函数被调用");
+//     }
+//     loaded(invokeHandle);
+//
+//     function mutiPar() {
+//         var p1=arguments[0];
+//         var p2=arguments[1];
+//         var p3=arguments[2];
+//         var p4=arguments[3];
+//         document.writeln(p1);
+//         document.writeln(p2);
+//         document.writeln(p3);
+//         document.writeln(p4);
+//
+//     }
+//     mutiPar(1,2,3,4);
+//
+//     document.write("<br>");
+//     var i=0;
+//     function outputMsg() {
+//         document.write("<br>")     ;
+//         document.write(i);
+//         i++;
+//         if(i<8){setTimeout(outputMsg,300);}
+//
+//     }
+//     outputMsg();
+
+ </script>
+</body>
+</html>

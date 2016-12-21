@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Human() {
+        this.height=170;
+        this.width=55;
+    }
+    var human = new Human();
+    function Student() {
+        this.name="涨涨";
+    }
+    Student.prototype =human;
+    var zhangZhang = new Student();
+    alert(zhangZhang.height);
+
+
+    function Animal(lifeSpan) {
+        this.lifeSpan = lifeSpan ?lifeSpan:100;
+        this.birth = "1970-1-1";
+        this.name = "animal";
+    }
+    function Black() {
+        this.target = ["cute","noisy"];
+        this.nickName = "nini";
+
+    }
+    var littleBlack = new Black();
+    Animal.apply(littleBlack,[30]);
+    var data = JSON.stringify(littleBlack);
+    document.write(data);
+    var computer ={
+        message:"coming message",
+
+    output:function () {
+        document.write(this.message);
+        document.write("<br>");
+    },
+    input:function(msg){
+        this.message = msg;
+    }
+    };
+    computer.input("!!!!!!!");
+    computer.output();
+    var firstMsg = "global";
+    function output() {
+        document.write(this.firstMsg);
+    }
+    output();
+
+    (function im() {
+
+   document.write("immediately invoke function!"); }());
+</script>
+</body>
+</html>

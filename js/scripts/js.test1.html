@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container" style="width:800px;height: 400px;background-color: #fd3421">
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner">3</div>
+    <div class="inner">4</div>
+</div>
+<script>
+    function output(msg) {
+        document.write("<br>");
+        document.write("<h1>"+msg+"</h1>>")
+
+    }
+   var classContainer=document.getElementsByClassName("container");
+    var container0=classContainer[0];
+    var containerParent=container0.parentNode;
+//    var children=container0 .children;
+    output(containerParent.nodeType);
+    output(containerParent.innerText);
+    var conChild=container0.childNodes;
+    output(conChild[0].nodeValue);
+    var conFirstChild=container0.firstChild;
+    output("第一个孩子是："+conFirstChild.nodeValue);
+    var conLastChild=container0.lastChild;
+    output(conLastChild.nodeValue);
+    var next= conChild[1].previousSibling;
+    output(next.length);
+
+//    var divElement = document.createElement("h1");
+//    divElement.innerText="5";
+//    container0.appendChild(divElement);
+//    container0.innerHTML=container0.innerHTML+"<h1>6</h1>"
+</script>
+</body>
+</html>

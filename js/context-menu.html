@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .context-menu{
+            width: 250px;
+            height:auto;
+            visibility: hidden;
+            border: 1px solid #000000;
+            position: absolute;
+            z-index: 0;
+            background-color: #9d9d9d;
+        }
+        .context-menu .item{
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            line-height: 30px;
+        }
+        .second-menu{
+            width: 200px;
+            height:auto;
+            visibility: hidden;
+            border: 1px solid #000000;
+            position: absolute;
+            z-index: 1;
+            background-color: #9d9d9d;
+        }
+        .second-menu .item{
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            line-height: 30px;
+        }
+        .third-menu{
+            width: 200px;
+            height:auto;
+            visibility: hidden;
+            border: 1px solid #000000;
+            position: absolute;
+            z-index: 3;
+            background-color: #9d9d9d;
+        }
+        .third-menu .item{
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            line-height: 30px;
+        }
+
+        .context-menu #addCollection:hover .second-menu{
+            visibility: visible;
+        }
+        .context-menu #addCollection:hover{
+            background-color: #0e8ed8;
+        }
+        .context-menu #addCollection:hover .second-menu #aaa:hover .third-menu{
+            visibility: visible;
+        }
+        .context-menu #addCollection:hover .second-menu #aaa:hover {
+            background-color: #0e8ed8;
+        }
+
+    </style>
+</head>
+<body>
+<div class="context-menu">
+    <div class="item" id="addCollection"><div class="second-menu">
+        <div class="item" id="aaa">啊啊啊啊<div class="third-menu">
+            <div class="item">嘻嘻嘻嘻</div>
+            <div class="item">啊啊啊啊</div>
+            <div class="item">嘻嘻嘻嘻</div>
+            <div class="item">鹅鹅鹅鹅</div>
+        </div></div>
+        <div class="item">嘻嘻嘻嘻</div>
+        <div class="item">鹅鹅鹅鹅</div>
+        <div class="item">啊啊啊啊</div>
+        <div class="item">嘻嘻嘻嘻</div>
+        <div class="item">啊啊啊啊</div>
+        <div class="item">嘻嘻嘻嘻</div>
+        <div class="item">鹅鹅鹅鹅</div>
+
+    </div>添加收藏</div>
+    <div class="item">复制文本</div>
+    <div class="item">菜单一</div>
+    <div class="item">菜单二</div>
+    <div class="item">哈哈哈哈哈哈哈</div>
+
+</div>
+<script>
+    document.addEventListener("contextmenu",function (e) {
+        e.preventDefault();
+        var mx=e.clientX;
+        var my=e.clientY;
+        var container=document.querySelector(".context-menu");
+        container.style.visibility="visible";
+        var wx=window.innerWidth;
+        var wy=window.innerHeight;
+        if(mx<=wx-250&&my<=wy-150){
+            container.style.left=mx+"px";
+            container.style.top=+my+"px";
+        }
+        else if(mx>=wx-250&&my>=wy-150){
+            container.style.left=wx-250+"px";
+            container.style.top=wy-150+"px";
+        }
+        else if(mx>wx-250){
+            container.style.left=wx-250+"px";
+            container.style.top=+my+"px";
+        }
+        else if(my>wy-150){
+            container.style.top=wy-150+"px";
+            container.style.left=mx+"px";
+        }
+        var secondMenu = document.querySelector(".second-menu");
+        if(mx<=wx-450&&my<=wy-150){
+            secondMenu.style.left=247+"px";
+            secondMenu.style.top=-1+"px";
+        }
+        else if(mx>wx-450){
+            secondMenu.style.left=-200+"px";
+            secondMenu.style.top=-91+"px";
+        }
+        var thirdMenu = document.querySelector(".third-menu");
+        if(mx<=wx-650&&my<=wy-150){
+            thirdMenu.style.left=198+"px";
+            thirdMenu.style.top=-1+"px";
+        }
+        else if(mx>wx-650){
+            thirdMenu.style.left=-200+"px";
+            thirdMenu.style.top=-1+"px";
+        }
+
+
+
+
+
+    });
+    document.addEventListener("click",function (e) {
+        var container=document.querySelector(".context-menu");
+        container.style.visibility="hidden";
+
+    });
+
+
+
+
+</script>
+</body>
+</html>

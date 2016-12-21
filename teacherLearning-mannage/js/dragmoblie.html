@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseDownDiv</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: #0e8ed8;
+            text-align: center;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    按住鹅！
+</div>
+<script>
+
+    var mouseX;
+    var mouseY;
+    var preMouseX;
+    var preMouseY;
+    var isMouseDown=false;
+    var subX;
+    var subY;
+    var container = document.querySelector(".container");
+    container.addEventListener("touchstart",function (e) {
+        if(e.targetTouches&&e.targetTouches.length===1){
+            e= e.targetTouches[0];
+            isMouseDown=true;
+        }
+
+
+        subX=e.pageX-container.offsetLeft;
+        subY=e.pageY-container.offsetTop;
+
+    });
+    document.addEventListener("touchmove",function (e) {
+        if(e.targetTouches&&e.targetTouches.length===1){
+            e= e.targetTouches[0];
+            if(isMouseDown){
+                mouseX = e.pageX-subX;
+                mouseY = e.pageY-subY;
+                container.style.left =mouseX+"px";
+                container.style.top =mouseY+"px";
+            }
+        }
+
+
+
+    });document.addEventListener("touchend",function (e) {
+
+        isMouseDown=false;
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.main-menu{
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    position: static;
+    background-color: white;
+
+}
+.container{
+   background: #fff;
+}
+
+.main-menu>div{
+    width: 31.5vw;
+    height: 15.5vh;
+}
+.main-menu label{
+    display: none;
+}
+footer{
+    position: static;
+}
+.gallary{
+    width: 100vw;
+    height:50vw;
+    position: relative;
+    visibility: visible;
+    overflow: hidden;
+}
+.gallary img{
+    width: 100vw;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.gallary-targgles{
+    width: 91px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -45px;
+
+}
+.gallary-targgles>div{
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    margin-left: 10px;
+}
+.carousel{
+    width: 3000px;
+    height: 100%;
+    position: absolute;
+    transition: left 0.5s;
+}
+/*.gallery .carrousel >img:nth-child(1){*/
+    /*position:absolute;*/
+    /*right: 0;*/
+    /*left: 0;*/
+/*}*/
+/*.gallery .carrousel >img:nth-child(2){*/
+    /*position:absolute;*/
+    /*right: -100vw;*/
+/*}*/
+/*.gallery .carrousel>img:nth-child(3){*/
+    /*position:absolute;*/
+    /*right: -200vw;*/
+/*}*/
