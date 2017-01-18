@@ -158,4 +158,7 @@ footer{
     user-select: none;
     visibility: visible;
 }
+.gallery{
+    visibility: hidden;
+}
 

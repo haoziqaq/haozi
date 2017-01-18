@@ -1,0 +1,36 @@
+.container.calender{
+    width:238px;
+    height: 500px;
+    background-color: #000;
+    color:white;
+}
+.container.calender>div{
+    display: flex;
+    flex-wrap:wrap;
+}
+.container.calender .date-container{
+    width: 20px;
+    height: 20px;
+    flex-grow:10;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border:2px solid rgba(0,0,0,0);
+}
+.container.calender .date-container.next{
+    color: #dddddd;;
+}
+.container.calender .date-container.next.day{
+    background-color: #00A69D;
+    border: 2px solid #0c92f2;
+}
+.top,.down{
+    width: 20px;
+    height: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.tool-bar{
+    justify-content: flex-end;
+}

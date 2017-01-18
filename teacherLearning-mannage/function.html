@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #scroll{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            background-color: #000;
+            top:40px;
+        }
+    </style>
+</head>
+<body>
+<div style="height: 6000px;">
+    <div id="scroll"></div>
+</div>
+<script>
+//    var name = "全局变量 name";
+//    function invokeWay() {
+//        document.write("直接调用函数输出!"+this.name);
+//        document.write("<br>");
+//        document.write("指定this"+arguments[0]);
+//        this.newTitle = "new-title";
+//    }
+//    invokeWay();
+//    var obj = {
+//        name:"obj name",
+//            fn:invokeWay
+//    };
+//    obj.fn();
+//
+//    var thisObj = {
+//        name:"this-obj"
+//
+//    };
+//    invokeWay.apply(thisObj,[1,2,3]);
+//
+//    var generation = new invokeWay("new 关键字！");
+//    document.write("new"+ generation.newTitle);
+var body=document.querySelector("body");
+var scroll = document.querySelector("#scroll");
+    addEventListener("scroll",function (e) {
+        if(body.scrollTop >40){
+            scroll.style.position="fixed";
+            scroll.style.top = "3px";
+        }else{
+            scroll.style.position = "absolute";
+            scroll.style.top = "40px";
+        }
+    });
+</script>
+</body>
+</html>

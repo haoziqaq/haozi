@@ -1,0 +1,646 @@
+@font-face {
+    font-family:icon-font;
+    src:url(../fonts/glyphicons-halflings-regular.woff);
+}
+body{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-family:icon-font;
+}
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-image:url(../images/bj.png);
+    background-size:cover;
+    background-position:center center;
+}
+.content{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+footer{
+    width:100vw;
+    height:50px;
+    background-color:#000;
+    position:absolute;
+    bottom:0;
+}
+.main-menu{
+    width:70vw;
+    height:70vh;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    bottom:50px;
+    padding:1vw 1.5vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border:none;
+}
+.main-menu:focus{
+    outline:none;
+}
+.main-menu > div{
+    width:16.5vw;
+    height:15.5vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    user-select:none;
+    cursor:pointer;
+    /*background-color:#B61705;*/
+}
+/*.main-menu > div:nth-child(1){*/
+    /*background-color:#B61705;*/
+/*}*/
+.main-menu > div.student{
+    background-color:#B61705;
+}
+/*.main-menu > div:nth-child(2){*/
+    /*background-color:#0086A8;*/
+/*}*/
+.main-menu > div.student1{
+    background-color:#0086A8;
+}
+/*.main-menu > div:nth-child(3){*/
+    /*background-color:#6B00BB;*/
+/*}*/
+.main-menu > div.student2{
+    background-color:#6B00BB;
+}
+/*.main-menu > div:nth-child(4){*/
+    /*background-color:#BB006B;*/
+/*}*/
+.main-menu > div.student3{
+    background-color:#BB006B;
+}
+/*.main-menu > div:nth-child(5){*/
+    /*background-color:#A66800;*/
+/*}*/
+.main-menu > div.student4{
+    background-color:#A66800;
+}
+/*.main-menu > div:nth-child(6){*/
+    /*background-color:#0113BA;*/
+/*}*/
+.main-menu > div.student5{
+    background-color:#0113BA;
+}
+/*.main-menu > div:nth-child(7){*/
+    /*background-color:#779902;*/
+/*}*/
+.main-menu > div.student6{
+    background-color:#779902;
+}
+/*.main-menu > div:nth-child(8){*/
+    /*background-color:#009747;*/
+/*}*/
+.main-menu > div.student7{
+    background-color:#009747;
+}
+/*.main-menu > div:nth-child(9){*/
+    /*background-color:#417A62;*/
+/*}*/
+.main-menu > div.student8{
+    background-color:#417A62;
+}
+/*.main-menu > div:nth-child(10){*/
+    /*background-color:#E800BF;*/
+/*}*/
+.main-menu > div.student9{
+    background-color:#E800BF;
+}
+/*.main-menu > div:nth-child(11){*/
+    /*background-color:#01BA95;*/
+/*}*/
+.main-menu > div.student10{
+    background-color:#01BA95;
+}
+/*.main-menu > div:nth-child(12){*/
+    /*background-color:#1B5AC5;*/
+/*}*/
+.main-menu > div.student11{
+    background-color:#1B5AC5;
+}
+/*.main-menu > div:nth-child(13){*/
+    /*background-color:#00A69D;*/
+/*}*/
+.main-menu > div.student12{
+    background-color:#00A69D;
+}
+/*.main-menu > div:nth-child(14){*/
+    /*background-color:#279B00;*/
+/*}*/
+.main-menu > div.student13{
+    background-color:#279B00;
+}
+/*.main-menu > div:nth-child(15){*/
+    /*background-color:#3C6A6F;*/
+/*}*/
+.main-menu > div.student14{
+    background-color:#3C6A6F;
+}
+/*.main-menu > div:nth-child(16){*/
+    /*background-color:#333333;*/
+/*}*/
+.main-menu > div.student15{
+    background-color:#333333;
+}
+/*.main-menu > div > .icon:before{*/
+  /*content:'\e008';*/
+/*}*/
+/*.main-menu > div:nth-child(1) > .icon:before{*/
+    /*content:'\e008';*/
+/*}*/
+.main-menu > div.student .icon:before{
+    content:'\e008';
+}
+/*.main-menu > div:nth-child(2) > .icon:before{*/
+    /*content:'\e105';*/
+/*}*/
+.main-menu > div.student1 .icon:before{
+    content:'\e105';
+}
+/*.main-menu > div:nth-child(3) > .icon:before{*/
+    /*content:'\e121';*/
+/*}*/
+.main-menu > div.student2 .icon:before{
+    content:'\e121';
+}
+/*.main-menu > div:nth-child(4) > .icon:before{*/
+    /*content:'\e139';*/
+/*}*/
+.main-menu > div.student3 .icon:before{
+    content:'\e139';
+}
+/*.main-menu > div:nth-child(5) > .icon:before{*/
+    /*content:'\e013';*/
+/*}*/
+.main-menu > div.student4 .icon:before{
+    content:'\e013';
+}
+/*.main-menu > div:nth-child(6) > .icon:before{*/
+    /*content:'\e111';*/
+/*}*/
+.main-menu > div.student5 .icon:before{
+    content:'\e111';
+}
+/*.main-menu > div:nth-child(7) > .icon:before{*/
+    /*content:'\e171';*/
+/*}*/
+.main-menu > div.student6 .icon:before{
+    content:'\e171';
+}
+/*.main-menu > div:nth-child(8) > .icon:before{*/
+    /*content:'\e118';*/
+/*}*/
+.main-menu > div.student7 .icon:before{
+    content:'\e118';
+}
+/*.main-menu > div:nth-child(9) > .icon:before{*/
+    /*content:'\e103';*/
+/*}*/
+.main-menu > div.student8 .icon:before{
+    content:'\e103';
+}
+/*.main-menu > div:nth-child(10) > .icon:before{*/
+    /*content:'\e115';*/
+/*}*/
+.main-menu > div.student9 .icon:before{
+    content:'\e115';
+}
+/*.main-menu > div:nth-child(11) > .icon:before{*/
+    /*content:'\e145';*/
+/*}*/
+.main-menu > div.student10 .icon:before{
+    content:'\e145';
+}
+/*.main-menu > div:nth-child(12) > .icon:before{*/
+    /*content:'\e123';*/
+/*}*/
+.main-menu > div.student11 .icon:before{
+    content:'\e123';
+}
+/*.main-menu > div:nth-child(13) > .icon:before{*/
+    /*content:'\e019';*/
+/*}*/
+.main-menu > div.student12 .icon:before{
+    content:'\e019';
+}
+/*.main-menu > div:nth-child(14) > .icon:before{*/
+    /*content:'\e135';*/
+/*}*/
+.main-menu > div.student13 .icon:before{
+    content:'\e135';
+}
+/*.main-menu > div:nth-child(15) > .icon:before{*/
+    /*content:'\e024';*/
+/*}*/
+.main-menu > div.student14 .icon:before{
+    content:'\e024';
+}
+/*.main-menu > div:nth-child(16) > .icon:before{*/
+    /*content:'\e072';*/
+/*}*/
+.main-menu > div.student15 .icon:before{
+    content:'\e072';
+}
+
+.main-menu > div:hover{
+    border:2px solid #ddd;
+}
+.main-menu > div:active{
+    transform:scale(0.97,0.97);
+    border:none;
+}
+.main-menu > div .icon{
+    font-size:36px;
+}
+.main-menu label{
+    font-size:36px;
+    font-weight:bold;
+    font-style:italic;
+    position:absolute;
+    bottom:-40px;
+    z-index:1;
+    left:0;
+    cursor:pointer;
+    visibility:visible;
+}
+.main-menu:focus{
+    visibility:visible;
+}
+.gallery{
+    visibility:hidden;
+}
+
+.mobile{
+  display:none !important;
+}
+.pc{
+  display:block !important;
+}
+.login-click{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+}
+.login-click .login-click-inner{
+    width: 40vw;
+    height: 45vh;
+    position: absolute;
+    background-color: white;
+    top:27%;
+    left: 28%;
+    color:black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-click .login-click-inner label{
+    font-size: 16px;
+
+
+}
+.login-click  span{
+    color: black;
+    font-size: 24px;
+    z-index: 2;
+    position: absolute;
+    top:28%;
+    left: 29%;
+}
+
+.loginClose{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: burlywood;
+    top:26%;
+    left: 67.2%;
+    z-index: 3;
+    text-align: center;
+    cursor: pointer;
+}
+.loginClose:before{
+    content: "\e014";
+    font-size: 20px;
+}
+
+.register-click{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+}
+.register-click .register-click-inner{
+    width: 40vw;
+    height: 45vh;
+    position: absolute;
+    background-color: white;
+    top:27%;
+    left: 28%;
+    color:black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-click .register-click-inner label{
+    font-size: 16px;
+
+
+}
+.register-click  span{
+    color: black;
+    font-size: 24px;
+    z-index: 2;
+    position: absolute;
+    top:28%;
+    left: 29%;
+}
+
+.registerClose{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: burlywood;
+    top:26%;
+    left: 67.2%;
+    z-index: 3;
+    text-align: center;
+    cursor: pointer;
+}
+.registerClose:before{
+    content: "\e014";
+    font-size: 20px;
+}
+.message-click{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    right:15px;
+    bottom:60px;
+    border-radius: 15px;
+    visibility: hidden;
+
+}
+.message-click .message-inner{
+    width: 350px;
+    height: 640px;
+    background-color: white;
+    margin: 25px auto 0;
+    padding: 1px;
+    border-radius: 15px;
+}
+ .message-inner .message-title{
+    width: 285px;
+     height: 40px;
+     margin: 10px auto 0;
+     background-color: green;
+     padding-top: 10px;
+     border-radius: 15px;
+
+}
+ #border{
+     width: 1px;
+     height: 39px;
+     border-right: 1px solid black;
+ }
+.message-title span{
+    color:black;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    margin-left: 55px;
+    cursor: pointer;
+
+
+}
+.messageClose{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    top:-1%;
+    right: -1%;
+    text-align: center;
+    cursor: pointer;
+}
+.messageClose:before{
+    content: "\e014";
+    font-size: 20px;
+}
+.member-container{
+    width:307px;
+    height: 500px;
+    position: absolute;
+    top:20%;
+    left: 14%;
+    color:black;
+    font-family: 微软雅黑;
+    overflow: auto;
+}
+.userInput{
+    width: 285px;
+    color:black;
+    margin: 5px auto 0;
+    font-family: 微软雅黑;
+    font-size: 17px;
+}
+.userInput label{
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+.userInput input{
+    width: 160px;
+    height: 24px;
+    outline:none;
+}
+#connect{
+    width: 60px;
+    height:30px;
+    position: absolute;
+    left:70%;
+    top:16%;
+    color:white;
+    border-radius: 15px;
+    background-color: black;
+    outline: none;
+}
+.userDiv{
+    width: 276px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+.userDiv span{
+    width: 200px;
+    height: 22px;
+    font-size: 27px;
+    position: absolute;
+    top:15px;
+    left:90px;
+}
+.create{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 800px;
+    height: auto;
+    float: left;
+    z-index: 1000;
+}
+.chatWindow{
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid black;
+    position: absolute;
+    float: left;
+    left:0;
+    top:100px;
+}
+.input-container{
+    width: 694px;
+    height: 160px;
+    border-top: 2px solid gray;
+    position: absolute;
+    bottom: 0;
+}
+.input-container .input-chatContent{
+    width: 610px;
+    height: 158px;
+    border: none;
+    outline: none;
+}
+.input-container .sendButton{
+    position: absolute;
+    /*z-index: 1;*/
+    bottom: 2px;
+    right: 13px;
+    width: 80px;
+    height: 27px;
+    background-color: black;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+}
+.input-container .closeChat{
+    position: absolute;
+    /*z-index: 1;*/
+    bottom: 2px;
+    right: 80px;
+}
+
+.chatContent{
+    width: 693px;
+    height: 384px;
+    overflow: auto;
+    word-wrap: break-word;
+    color: black;
+    font-family: 楷体;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.chattingWith{
+    height: 50px;
+    width: 700px;
+    color: black;
+    font-family: 楷体;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+
+}
+
+.localDiv{
+    width: 500px;
+    height: auto;
+    float: left;
+}
+.localDiv span{
+    width: 300px;
+    float: left;
+}
+.textDiv {
+    width: 500px;
+    height: auto;
+    float: right;
+}
+.textDiv span{
+    float: right;
+    width: 300px;
+    text-align: right;
+
+}
+#accept{
+    margin-right: 3px;
+    word-wrap: break-word;
+    float: right;
+    width: 400px;
+
+}
+#chattingWithId{
+    width: 700px;
+    word-wrap: break-word;
+}
+#accept span{
+    float: right;
+
+}
+.windowIcon{
+    width: 22px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:-1%;
+    right: -1%;
+    cursor: pointer;
+
+}
+.windowIcon:before{
+    content: "\e014";
+    font-size: 20px;
+}
+
+
+
+
+
+

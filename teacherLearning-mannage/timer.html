@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<div id="outputContainer"></div>
+<script>
+//    function Timer() {
+//        var self = this;
+//        self.now = new Date();
+//        self.year = self.now.getFullYear();
+//        self.month = self.now.getMonth() + 1;
+//        self.date = self.now.getDate();
+//        self.hours = self.now.getHours();
+//        self.minute = self.now.getMinutes();
+//        self.second =self.now.getSeconds();
+//        self.miniSecond = self.now.getMilliseconds();
+//        self.output = function (selector) {
+//            var o = document.querySelector(selector);
+//            o.innerText = self.year + "-"+self.month+"-"+self.date+"   "+self.hours+":"+self.minute+":"
+//                    +self.second+":"+self.miniSecond;
+//        }
+//
+//    }
+//    setInterval(function () {
+//        var timer = new Timer();
+//        timer.output("#outputContainer");
+//    },1);
+
+    function Countdown(dateStr) {
+        var now = new Date();
+        var des = new Date(dateStr);
+        var subMiniSecond = des - now;
+        var dates = subMiniSecond/1000/60/60/24;
+        var reDate = Math.floor(dates);
+        var resubDate= dates-reDate;
+        var hours = resubDate*24;
+        var reHours = Math.floor(hours);
+        var resubHour =hours-reHours;
+        var minute = resubHour*60;
+        var reMinute=Math.floor(minute);
+        var resubSecond=minute - reMinute;
+        var second = resubSecond*60;
+        var reSecond = Math.floor(second);
+        var resubMini = second - reSecond;
+        var mini = resubMini*1000;
+        var reMini = Math.floor(mini);
+
+
+        var o = document.querySelector("#outputContainer");
+        o.innerText ="距离春节还有："+reDate+"天"+reHours+"小时"+reMinute+"分"+reSecond+"秒"+reMini+"毫秒";
+
+
+    }
+setInterval(function () {
+    Countdown("2017-1-28");
+},1);
+
+
+
+
+
+
+</script>
+</body>
+</html>

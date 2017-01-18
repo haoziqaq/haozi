@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>changeDiv</title>
+    <script src="changeDiv.js"></script>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container  {
+            width: 400px;
+            height: 400px;
+            background-color: #FDC880;
+            position: absolute;
+            border: 2px solid rgba(0,0,0,0);
+
+        }
+        .inner0{
+            top:-6px;
+            left: -8px;
+            cursor: nw-resize;
+        }
+        .inner1{
+            top:-8px;
+            left: 50%;
+            cursor: n-resize;
+        }.inner2{
+            top:-8px ;
+            right: -8px;
+            cursor: ne-resize;
+        }.inner3{
+            top:50%;
+            left: -8px;
+            cursor: w-resize;
+        }.inner4{
+            top:50%;
+            right: -8px;
+            cursor: e-resize;
+        }.inner5{
+            bottom: -8px;
+            left:-8px;
+            cursor:sw-resize;
+        }.inner6{
+            bottom: -8px;
+            left: 50%;
+            cursor: s-resize;
+        }.inner7{
+            bottom: -8px;
+            right: -8px;
+            cursor: se-resize;
+        }
+        .cl{
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="inner0"></div>
+    <div class="inner1"></div>
+    <div class="inner2"></div>
+    <div class="inner3"></div>
+    <div class="inner4"></div>
+    <div class="inner5"></div>
+    <div class="inner6"></div>
+    <div class="inner7"></div>
+</div>
+<script>
+window.util.container(".container");
+</script>
+</body>
+</html>

@@ -8,7 +8,6 @@ body{
 }
 *{
     box-sizing: border-box;
-    z-index: 0;
 }
 header{
     width: 100%;
@@ -110,7 +109,7 @@ header{
     bottom: -300px;
     right: 37px;
     background-color: #f6f6f6;
-    z-index: 1;
+    z-index:2000;
     cursor: default;
     visibility: hidden;
 }
@@ -121,7 +120,7 @@ header{
     top:-7px;
     right: 40px;
     background-image:url(../images/select-icon.png) ;
-    z-index: 2;
+    z-index:3;
 }
 #userName .userName-select .hr{
     width: 88px;

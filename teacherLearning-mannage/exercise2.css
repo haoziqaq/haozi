@@ -1,0 +1,600 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f1f2f3;
+}
+hr{
+    width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+.navigator{
+    width: 1900px;
+    height: 80px;
+    margin: 0 auto;
+    background-color:#ffffff;
+    /*float: left;*/
+    overflow: hidden;
+}
+.navigator .duitang-img{
+    width: 106px;
+    height: 50px;
+    background-image: url(../images/duitang.png);
+    background-size: 106px 50px;
+    margin-left: 200px;
+    margin-top: 18px;
+    float: left;
+}
+.navigator .select-container{
+    width: 87px;
+    height: 32px;
+    margin-top: 28px;
+    margin-left: 30px;
+    float:left;
+}
+.navigator .select-container select{
+    width: 87px;
+    height: 32px;
+    font-size: 20px;
+    float:left;
+}
+.navigator .search-container{
+    width:450px;
+    height: 40px;
+    border: 1px solid #c5c5c5;
+    float: left;
+    margin-top: 25px;
+    margin-left: 67px;
+}
+.search-container input[type=text]{
+    width:416px;
+    height: 38px;
+    border: none;
+    float: left;
+    outline: none;
+}
+.search-container img{
+    float: right;
+    margin-top: 5px;
+    margin-right: 9px;
+}
+.navigator #navigatorAdd-icon{
+    margin-top: 30px;
+    margin-left: 93px;
+    float:left;
+}
+.navigator .verticalLine{
+    width: 1px;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    float: left;
+    margin: 32px 32px;
+}
+.navigator a{
+    /*display: block;*/
+    font-size: 19px;
+    margin-top: 37px;
+    color: black;
+    text-decoration: none;
+    float: left;
+}
+.navigator #new-icon{
+    margin-top: 39px;
+    float:left;
+    margin-left: 2px;
+}
+#smell-icon{
+    margin-top:24px;
+    float:left;
+}
+#myduitang-select{
+    border: none;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 10px;
+    outline: none;
+}
+.areaHot-container{
+    width: 1500px;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+    /*float: left;*/
+}
+.areaHot-container .areaHot-gallery{
+    width: 891px;
+    height: 553px;
+    float: left;
+    background-image:url(../images/girl-icon.png);
+}
+.areaHot-container .areaHot-tag{
+    width: 580px;
+    height: 340px;
+    float: left;
+    margin-left: 28px;
+    background-color: white;
+    /*text-indent: 30px;*/
+}
+.areaHot-tag .hotTagText{
+    width: 560px;
+    height: auto;
+    margin-top: 20px;
+}
+.areaHot-tag .hotTagText:first-line{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: #7c7f79;
+}
+.hotTagText hr{
+    width:500px;
+    margin: 15px auto;
+}
+.hotTagText .verticalLine1{
+    width: 1px;
+    height: 15px;
+    border: 1px solid #7c7f79;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 2px;
+    float: left;
+}
+.hotTagText span{
+    float:left;
+    width: auto;
+    height: auto;
+}
+.hotTagText .verticalLine2{
+    width: 1px;
+    height: 15px;
+    border: 1px solid #7c7f79;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 7px;
+    float: left;
+}
+.hotTagText .text{
+    width: 560px;
+    height: auto;
+    float:left;
+    margin-left: 30px;
+}
+.areaHot-container .areaHot-banner{
+    width: 580px;
+    height:185px;
+    float: left;
+    margin-left: 28px;
+    margin-top: 30px;
+    background-color: white;
+}
+.areaHot-banner .phone-container{
+    width:200px;
+    height: 185px;
+    float:left;
+    background-image: url(../images/phone.png);
+}
+.areaHot-banner .input-container{
+    width:240px;
+    height: 110px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 45px;
+}
+.input-container span{
+    float:left;
+}
+.input-container input[type=submit]{
+    background-color: #e84c3d;
+    width: 102px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+
+}
+.gallery-container{
+    width: 1500px;
+    height: auto;
+    margin: 42px auto 0 auto;
+    overflow: hidden;
+}
+.gallery-container .label-container{
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color:#595959;
+    overflow: hidden;
+
+}
+.gallery-container .label-container input[type=submit]{
+     width: 99px;
+     height: 35px;
+     background-color:#22b4f6 ;
+     font-size: 18px;
+     outline: none;
+     color:white;
+     font-weight: bold;
+     float: right;
+}
+.gallery-row{
+    width: 1500px;
+    height: auto;
+    margin: 40px auto 40px auto;
+    overflow: hidden;
+}
+.gallery-row .gallery{
+    width:280px;
+    height: 380px;
+    background-color: white;
+    margin-right: 25px;
+    float: left;
+}
+.gallery-row .gallery span{
+    font-family: 宋体;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+}
+.gallery-row .gallery .sendBy{
+    width: 280px;
+    height: auto;
+    color: #888888;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+.gallery-row .gallery:last-child{
+    width:280px;
+    height: 380px;
+    background-color: white;
+    float: right;
+    margin-right: 0;
+}
+.guide{
+    width: 1500px;
+    margin-top: 40px;
+    height: auto;
+    overflow: hidden;
+}
+.guide span{
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color:#595959;
+    float: left;
+}
+.guide .kind{
+    width: 482px;
+    height: auto;
+    float: right;
+}
+.guide .kind span{
+    color: black;
+    font-family: 宋体;
+    font-size: 14px;
+}
+.guide .verticalLine1{
+    width: 1px;
+    height: 15px;
+    border: 1px solid #7c7f79;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 2px;
+    float: left;
+}
+.multiGallery-container{
+    width: 1500px;
+    height: auto;
+    margin: 40px auto 0;
+    overflow: hidden;
+}
+.multiGallery-container .gallery-column{
+    width:280px;
+    height: 2888px;
+    float: left;
+    margin-right: 20px;
+}
+.multiGallery-container .gallery-column .gallery1{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+.galleryTitle{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.galleryTitle:first-line{
+    font-size: 16px;
+}
+.gallery1 .user{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.gallery1 span{
+    float: left;
+}
+.multiGallery-container .gallery-column .gallery2{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+.gallery2 .user{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.gallery2 span{
+    float: left;
+}
+.multiGallery-container .gallery-column div:nth-child(1){
+    margin-top: 0;
+}
+.multiGallery-container .gallery-column1{
+    width:280px;
+    height:3600px;
+    float: left;
+    margin-right: 20px;
+}
+.multiGallery-container .gallery-column1 .gallery1{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+.multiGallery-container .gallery-column1 .gallery2{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+.multiGallery-container .gallery-column1 div:nth-child(1){
+    margin-top: 0;
+}
+.multiGallery-container .gallery-column2{
+    width:280px;
+    height:3600px;
+    float: left;
+    margin-right: 20px;
+}
+.multiGallery-container .gallery-column2 .gallery1{
+    background-color: white;
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+.multiGallery-container .gallery-column2 .gallery2{
+    background-color: white;
+    width: 280px;
+    height:auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+.multiGallery-container .gallery-column2 div:nth-child(1){
+    margin-top: 0;
+}
+.moreAndMore{
+    width: 1500px;
+    height: auto;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+}
+.moreAndMore input[type=submit]{
+    display: block;
+    background-color: #22b4f6;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color:white;
+    outline:none;
+    margin: 0 auto;
+
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #e1e2e3;
+    margin-top: 100px;
+    position: relative;
+}
+.footer .link-container{
+    width: 1600px;
+    height: 300px;
+    margin: 0 auto;
+}
+.footer .link-container .link{
+    width: 100%;
+    height: 215px;
+    float: left;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.footer .link-container .link .verticalLine3{
+    width: 1px;
+    height: 215px;
+    border: 1px solid #cfd0d1;
+    float: left;
+}
+.footer .link-container .link .link-item{
+    width:255px;
+    height: 215px;
+    float:left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer .link-container .link .link-item ul{
+    float: left;
+    list-style: none;
+}
+.link-item ul:nth-child(2){
+    margin-top: 38px;
+}
+.footer .link-container .link .link-item ul li{
+    margin-top:20px
+}
+.footer .link-container .link .link-item ul:first-child:first-child{
+    margin-top: 0;
+}
+.footer .link-container .link .link-item a{
+    text-decoration: none;
+    color: #666666;
+}
+.link .code-container{
+    width:255px;
+    height: 215px;
+    float: left;
+}
+.link .code-container img{
+    float: left;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.link .code-container span{
+    float: left;
+    width: 255px;
+    height: auto;
+}
+.footer .fromAbout-container{
+     width: 940px;
+    height: auto;
+    margin: -50px auto 0 auto;
+    overflow: hidden;
+}
+.fromAbout-container .fromAbout{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.fromAbout-container .fromAbout span {
+    color: #666666;
+    font-size: 18px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.bannerIcon-container{
+    width: 60px;
+    height: 180px;
+    background-image: url(../images/banner-icons.png);
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

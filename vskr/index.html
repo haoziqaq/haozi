@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>维森凯瑞</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+  <script>
+  if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+  .then(() => console.log('service worker installed'))
+  .catch(err => console.log('Error', err));
+  }
+  </script>-->
+
+  <!--<link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
+  <!--<link href="css/style.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" media="screen and (min-width:0) and (max-width:650px)"
+        href="style/index-mobile.css">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+  <!-- ionic/angularjs js -->
+  <!-- cordova script (this will be a 404 during development) -->
+</head>
+<body ng-app="starter">
+<div class="container" ng-controller="StarterController">
+  <div class="content">
+    <div class="content-inner">
+      <header>
+      </header>
+      <div class="gallery mobile">
+        <div class="carousel" id="carousel">
+          <img src="images/gallery1.png" alt="gallery1">
+          <img src="images/gallery2.png" alt="gallery2">
+          <img src="images/gallery3.png" alt="gallery3">
+          <img src="images/gallery4.png" alt="gallery4">
+        </div>
+        <div class="gallery-targgles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="main-menu">
+
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">学员日常</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">打卡记录</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">请假申请</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">登录</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">课堂表现</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">学员群</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">作业</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">源代码</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">课程管理</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">老师备课</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">移动端</span>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">站内消息</span>-->
+        <!--</div>-->
+        <!--<div ng-click="vibrationClick()">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">设置(vibr)</span>-->
+        <!--</div>-->
+        <!--<div ng-click="captureVideo()">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">注册(vedio)</span>-->
+        <!--</div>-->
+        <!--<div ng-click="captureAudioClick()">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">分组(audio)</span>-->
+        <!--</div>-->
+        <!--<div ng-click="capturePicture()">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">集体活动(pic)</span>-->
+        <!--</div>-->
+        <!--<div ng-click="captureAudioClick()" class="mobile">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">captureAudio</span>-->
+        <!--</div>-->
+        <!--<div ng-click="checkNetwork()" class="mobile">-->
+          <!--<span class="icon"></span>-->
+          <!--<span class="title">检查网络</span>-->
+        <!--</div>-->
+        <label>vskr</label>
+      </div>
+
+      <div class="mobile">
+        <img src="img/ionic.png" alt="logo" id="pictureCapture">
+        <div id="pictureContainer">
+        </div>
+      </div>
+
+    </div>
+    <div class="login-click">
+      <span>用户登录：</span>
+      <div class="loginClose"></div>
+      <div class="login-click-inner">
+        <form action="/loginData" method="post">
+
+          <label for="">用户名:</label><input type="text" name="userName" > <br>
+          <label for="">密&nbsp码:</label><input type="password" name="password"> <br>
+          <label for="">验证码:</label><input type="text" name="confirmCode"> <br>
+          &nbsp&nbsp&nbsp<input type="submit" value="登录" id="loginSubmit">
+          <input type="button" value="取消" id="loginCancel">
+
+
+
+        </form>
+      </div>
+    </div>
+      <div class="register-click">
+          <span>用户注册：</span>
+          <div class="registerClose"></div>
+          <div class="register-click-inner">
+              <form action="/registerData" method="post">
+
+                  <label for="">&nbsp&nbsp用户名:</label><input type="text" name="userName"> <br>
+                  <label for="">确认用户名:</label><input type="text" name="confirmUserName"> <br>
+                  <label for="">&nbsp&nbsp&nbsp密码:</label><input type="password" name="password"> <br>
+                  <label for="">&nbsp确认密码:</label><input type="password" name="confirmPassword"> <br>
+                  <label for="">&nbsp&nbsp&nbsp邮箱:</label><input type="email" name="email"> <br>
+                  <label for="">&nbsp手机号码:</label><input type="number" name="mobile"> <br>
+                  <label for="">&nbsp&nbsp验证码:</label><input type="text" name="confirmCode"> <br>
+
+                  &nbsp&nbsp&nbsp&nbsp<input type="submit" value="登录" id="registerSubmit">&nbsp
+                  <input type="button" value="取消" id="registerCancel">
+
+
+
+              </form>
+          </div>
+      </div>
+      <div class="message-click">
+          <div class="messageClose"></div>
+          <div class="message-inner">
+              <div class="message-title">
+                  <span id="member">成员</span><span id="border"></span> <span>群</span>
+              </div>
+              <div class="userInput">
+                  <label for="">请输入你的昵称:</label><input type="text" id="userInput">
+              </div>
+              <input type="button" id="connect" value="连接" >
+              <div class="member-container"></div>
+          </div>
+
+      </div>
+    <footer>
+        <button class="mobile" ng-click="photograph(2)">
+            选择图片
+        </button>
+        <button class="mobile" ng-click="photograph(1)">
+            拍照
+        </button>
+        <button class="mobile" ng-click="scanCode()">
+            扫描二维码
+        </button>
+        <button class="mobile" ng-click="getPosition()">
+            定位
+        </button>
+        <button class="mobile" ng-click="clearImage()">
+            清除
+        </button>
+    </footer>
+  </div>
+</div>
+<div class="create"></div>
+<script src="client.js"></script>
+</body>
+</html>
+
+

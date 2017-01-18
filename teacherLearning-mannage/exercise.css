@@ -1,0 +1,368 @@
+.navigator-container{
+    width: 1200px;
+    height: 110px;
+    background-color: #7c7f79;
+    margin: 0 auto;
+    position: relative;
+
+}
+body{
+    background-color: #dcdbda;
+}
+*{
+    box-sizing: border-box;
+}
+.logo{
+    width:290px;
+    height: 80px;
+    background-color: #245554;
+    font-family: Century;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    left:-26px;
+    top:15px;
+
+}
+.navigator{
+    width:450px;
+    height: 45px;
+    position: absolute;
+    top:35px;
+    right:0;
+    line-height: 45px;
+    overflow: hidden;
+}
+.navigator .verticalLine{
+    width: 1px;
+    height: 45px;
+    background-color: #686a66;
+    float:left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.navigator a{
+    float: left;
+    text-decoration: none;
+
+    font-family: Century;
+    font-size: 15px;
+    color: #b6b7b4;
+}
+.multi{
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+}
+.title-container{
+    width: 806px;
+    height:auto;
+    float: left;
+    overflow: hidden;
+
+
+}
+.title-container .title1{
+    width:806px;
+    height: auto;
+    font-size: 20px;
+    color:#999999;
+    font-family: Century;
+    padding-top: 20px;
+    padding-left: 32px;
+    float: left;
+    overflow: hidden;
+}
+.title-container .title2{
+    width:806px;
+    height: auto;
+    font-size: 28px;
+    color:#5b5920;
+    font-family: Century;
+    padding-left: 32px;
+    float: left;
+    overflow: hidden;
+}
+.title-container .title3{
+    width:806px;
+    height:auto;
+    font-size: 16px;
+    color:#222322;
+    font-family: Century;
+    margin-top: 10px;
+    padding-left: 32px;
+    float: left;
+    overflow: hidden;
+}
+.title3 a{
+    color:#5b5920;
+
+}
+.right-banner{
+    width: 394px;
+    height: 1399px;
+    float: left;
+    background-color: #dedfdc;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.search-container{
+    width: 360px;
+    height: 28px;
+    margin: 14px auto 0;
+
+}
+.right-banner ul{
+    list-style: square;
+    overflow: hidden;
+}
+.search-container input[type=text]{
+    width: 238px;
+    height: 25px;
+}
+.search-container input[type=submit]{
+    width: 108px;
+    height: 26px;
+    color:#e5e5e4;
+    background-color: #7c7f79;
+    font-size: 16px;
+    font-family: Century;
+    margin-left: 5px;
+    outline:none;
+}
+.right-banner a{
+    color:#5b5920;
+    font-family: Century;
+    font-size: 16px;
+    line-height:28px;
+}
+h1{
+    color:#5b5920;
+    font-family: Century;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.right-banner-text{
+    width: 334px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    font-family: Century;
+}
+.right-banner .book-list{
+    width: 362px;
+    height: auto;
+    background-color: white;
+    margin: 35px 0 0 20px;
+    overflow: hidden;
+    float:left;
+}
+.right-banner .book-list .book-list-text a{
+    color: #5b5920;
+    font-size: 20px;
+
+}
+.right-banner .book-list-text{
+    width: 255px;
+    height: auto;
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.right-banner .book-list-photo{
+    width:80px;
+    height:100px;
+    margin-top: 10px;
+    overflow: hidden;
+    float:left;
+}
+.right-banner span{
+    float:left;
+    font-weight: bold;
+    margin-top: 28px;
+}
+.book-list-text1{
+    width: 363px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.right-banner .Get-it{
+    width: 363px;
+    height: auto;
+    margin-left: 10px;
+
+}
+.verticalLine1{
+    width: 1px;
+    height: 12px;
+    float: left;
+    line-height: 18px;
+    background-color: #686a66;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 8px;
+}
+.Get-it a{
+    font-size: 12px;
+    float:left;
+}
+.Get-it span{
+    float: left;
+    margin:5px 10px 0 0;
+}
+.page-button{
+    width:743px;
+    height: auto;
+    background-color: #f6f6f6;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    margin: 29px 27px 0 27px;
+    float: left;
+}
+.page-button span{
+    font-size: 5px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 12px;
+
+}
+.page-button input[type=button]{
+    width: 27px;
+    height: 31px;
+    margin-top: 3px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+    background-color: #f6f6f6;
+}
+#special{
+    border: 1px solid #999999;
+    background-color: #ffffff;
+}
+.gallery-container{
+    width: 806px;
+    height:auto;
+    margin: 22px auto 0;
+}
+.gallery-container .gallery{
+    width:213px;
+    height: 220px;
+    margin-left: 27px;
+    color: #5b5920;
+    font-size: 16px;
+    font-family: Century;
+    float: left;
+}
+.foot{
+    width: 1200px;
+    height:auto;
+    margin: -10px auto;
+    background-color: white;
+}
+.foot .about{
+    width: 745px;
+    height: 83px;
+    margin-left: 27px;
+}
+.foot .about a{
+    float:left;
+    color: #5b5920;
+    font-family: Century;
+}
+.foot .footer{
+    width: 100%;
+    height: 63px;
+    background-color: #7c7f79;
+    position: relative;
+}
+.foot .footer .friendlink{
+     width:256px;
+     height: auto;
+     line-height: 16px;
+     color:white;
+     float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.friendlink a{
+    color:white;
+    font-size: 16px;
+    font-family: Century;
+    font-weight: bold;
+}
+.foot .footer .friendlink1{
+    width:256px;
+    height: auto;
+    line-height: 16px;
+    color:#919aa0;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.friendlink1 a{
+    color:#919aa0;
+    font-size: 16px;
+    font-family: Century;
+    float:left;
+}
+.friendlink1 span{
+    float: left;
+}
+.navigator1{
+    width:450px;
+    height: 45px;
+    position: absolute;
+    top:10px;
+    right:0;
+    line-height: 45px;
+    overflow: hidden;
+}
+.navigator1 a{
+    float: left;
+    text-decoration: none;
+
+    font-family: Century;
+    font-size: 15px;
+    color: #b6b7b4;
+}
+.navigator1 .verticalLine{
+    width: 1px;
+    height: 45px;
+    background-color: #686a66;
+    float:left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

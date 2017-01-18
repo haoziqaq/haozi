@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        [title] {
+            color: #fff;
+            background-color: #777;
+        }
+
+        [title=del] {
+            color: #00f;
+        }
+
+        [data-code] {
+            color: #0f0;
+            background-color: #000;
+        }
+
+        [for=goodssId] {
+            color: #f00;
+        }
+
+        form [for=goodsCode] {
+            color: #f00;
+        }
+
+        form > [for=goodsName] {
+            color: #00f;
+        }
+
+        [for=goodsCode]~ [for=goodsName] {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1> CSS属性选择器</h1>
+<p title="abc">title-abc</p>
+<p title="del">title-def</p>
+<p data-code="ghi">data-code=ghi</p>
+<hr/>
+<h2>示例3</h2>
+<div id="dataSubmitWrapper" class="container">
+    <form id="table" action="#">
+        <label for="goodsCode">商品代码</label>：<input id="goodsCode" type="text"/><br/>
+        <label for="goodssId">商品ID</label>:<input id="goodssId" type="text"/><br/>
+        <label for="goodsName">商品名称</label>:<input id="goodsName" type="text"/><br/>
+        <input type="submit" value="提交"/><input type="button" value="取消"/><br/>
+
+
+</div>
+<label>下拉框</label>
+<select>
+    <option value="一">1</option>
+    <option value="一">2</option>
+    <option value="一">3</option>
+    <option value="一">4</option>
+</select>
+<br/>
+<label>复选框</label>
+<label for="1">1</label>：<input id="1" name=fuxuankuang type="checkbox"/>
+<label for="2">2</label>：<input id="2" name=fuxuankuang type="checkbox"/>
+<label for="3">3</label>：<input id="3" name=fuxuankuang type="checkbox"/>
+<label for="4">4</label>：<input id="4" name=fuxuankuang type="checkbox"/>
+
+<br/>
+<label>单选框</label>
+<input type="radio" name="sin">男
+<input type="radio" name="sin">女 <br/>
+<img src="E:\1.PNG" alt="" width="300" height="300"/><br/>
+<a href="www.baidu.com">百度知道</a>
+
+</body>
+</html>
